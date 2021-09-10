@@ -10,7 +10,7 @@ router.get("/:token", ensureAuthenticated, function (req, res) {
     var code = `
   <!-- The core Errgle JS SDK is always required and must be listed
    first in the head of your HTML-->
-  <script src="http://localhost:3000/cdn/v1.0/monitoring.js"></script>
+  <script src="https://errgle.herokuapp.com/cdn/v1.0/monitoring.js"></script>
   <script>
       // Your web app's Errgle configuration
       var monitoring_config = { 
