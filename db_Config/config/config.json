@@ -1,0 +1,38 @@
+{
+  "development": {
+    "database": {
+      "url": "mongodb://root:bootcamp2021@localhost:8081/db-dev?authSource=admin",
+      "options": {
+        "useCreateIndex": true,
+        "useNewUrlParser": true,
+        "useUnifiedTopology": true,
+        "useFindAndModify": true
+      }
+    }
+  },
+  "test": {
+    "database": {
+      "url": "mongodb+srv://root:bootcamp2021@cluster0.4hexy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+      "options": {
+        "useCreateIndex": true,
+        "useNewUrlParser": true,
+        "useUnifiedTopology": true
+      }
+    }
+  },
+  "production": {
+    "database": {
+      "protocol": "mongodb",
+      "username": "root",
+      "password": "password",
+      "name": "database_production",
+      "host": "localhost",
+      "port": "9001",
+      "options": {
+        "useCreateIndex": true,
+        "useNewUrlParser": true,
+        "useUnifiedTopology": true
+      }
+    }
+  }
+}
